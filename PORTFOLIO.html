@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #84a6e9;
+        }
+
+        header {
+            background-color: #941919;
+            color: #fff;
+            text-align: center;
+            padding: 2rem 0;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .profile-picture {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 1rem;
+        }
+
+        nav {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #fff;
+        }
+
+        .section-content {
+            background-color: #fff;
+            padding: 2rem;
+            margin: 1rem;
+            border-radius: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: justify;
+        }
+
+        .download-button {
+            background-color: #333;
+            color: #fff;
+            padding: 0.5rem 1rem;
+            text-decoration: none;
+            border-radius: 20px;
+            display: inline-block;
+            margin-top: 10px;
+            align-self: center;
+        }
+
+        .download-button:hover {
+            background-color: #555;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1rem 0;
+            background-color: #333;
+            color: #fff;
+        }
+
+        ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+
+        @media (max-width: 768px) {
+            header {
+                padding: 1rem 0;
+            }
+            .profile-picture {
+                width: 80px;
+                height: 80px;
+            }
+            .header-content h1 {
+                font-size: 1.8rem;
+            }
+            nav ul {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            nav ul li {
+                margin: 10px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <!-- Add your profile picture here -->
+            <img src="passport photo.jpg" alt="Your Profile Picture" class="profile-picture">
+            <h1>Dhanalakshmi K</h1>
+            <p>Software Developer & Front-End Developer</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#resume">Resume</a></li>
+        </ul>
+    </nav>
+
+    <section id="about">
+        <div class="section-content">
+            <h2>About Me</h2>
+            <p>I'm a passionate <b>Software Developer</b> with a strong interest in <b>Front-End Development</b>. I am currently studying IIBCA (Integrated Information Technology & Computer Applications) at <b>Soka Ikeda College of Arts and Science for Women</b>, located in Ambattur, Chennai, Tamil Nadu. My goal is to pursue a role as a front-end developer where I can create beautiful, user-friendly interfaces and enhance user experience. I am always eager to learn new technologies and improve my skills to stay ahead in the ever-evolving tech industry.</p>
+        </div>
+    </section>
+
+    <section id="education">
+        <div class="section-content">
+            <h2>Education</h2>
+            <p><b>Soka Ikeda College of Arts and Science for Women</b> (Chennai, Tamil Nadu) - IIBCA (Integrated Information Technology & Computer Applications)</p>
+            <p>Currently pursuing my degree with a focus on software development, programming languages, and web technologies.</p>
+        </div>
+    </section>
+
+    <section id="skills">
+        <div class="section-content">
+            <h2>Skills</h2>
+            <ul>
+                <li>Java</li>
+                <li>C++</li>
+                <li>Python</li>
+                <li>JavaScript</li>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>React.js (Intermediate)</li>
+                <li>Git & GitHub</li>
+                <li>Responsive Web Design</li>
+                <li>Web Development Best Practices</li>
+                <li>Problem Solving</li>
+                <li>Team Collaboration</li>
+            </ul>
+
+            <h3>Soft Skills</h3>
+            <ul>
+                <li>Communication</li>
+                <li>Time Management</li>
+                <li>Adaptability</li>
+                <li>Attention to Detail</li>
+                <li>Leadership & Teamwork</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="projects">
+        <div class="section-content">
+            <h2>Projects</h2>
+            <ul>
+                <li><a href="#">E-Commerce Website</a> - A dynamic e-commerce website built with HTML, CSS, and JavaScript to manage product listings, user accounts, and checkout.</li>
+                <li><a href="#">Personal Portfolio</a> - A responsive portfolio to showcase my web development skills and projects.</li>
+                <li><a href="#">To-Do List Application</a> - A simple to-do list application using React.js for managing tasks.</li>
+                <li><a href="#">Weather App</a> - A weather forecasting app built using JavaScript and a third-party API to show real-time weather data.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="resume">
+        <div class="section-content">
+            <center>
+                <h2>Resume</h2>
+                <a href="Dhanalakshmi_K_Resume.pdf" target="_blank" class="download-button">Download CV</a>
+            </center>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Dhanalakshmi K</p>
+    </footer>
+
+    <script>
+        // Smooth scrolling to section when clicking on navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+
+                const targetId = this.getAttribute('href').substring(1);
+                const targetElement = document.getElementById(targetId);
+
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
